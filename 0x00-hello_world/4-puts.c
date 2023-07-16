@@ -3,7 +3,7 @@
 /**
  * main - Entry point 
  *
- * Description : c program prints 
+ * Description : c program prints with puts function
  *
  * return : Alwaye (0) Success 
  */
