@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *main : Entry point 
+ * main - Entry point 
  *
- *Description : c program prints 
+ * Description : c program prints 
  *
- *return : Alwaye (0) Success 
+ * return : Alwaye (0) Success 
  */
 int main(void)
 {
