@@ -4,7 +4,7 @@
  *
  *Description : c program prints 
  *
- *return : Alwaye return (0) 
+ *return : Alwaye (0) Success 
  */
 int main(void)
 {
