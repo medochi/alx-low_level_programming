@@ -3,6 +3,7 @@
 
 /**
  * struct dog - dog class
+ *
  * @name: Name of the dog 
  *
  * @age: Age of the dog
