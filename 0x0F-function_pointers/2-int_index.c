@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stdbool.h>
 /**
  * int_index - function that checks
  *
@@ -25,7 +25,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			bool what;
 
 			what = cmp(array[i]);
-			if (bool)
+			if (what)
 
 			{
 				return (i);
