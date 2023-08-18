@@ -1,19 +1,15 @@
 #include "function_pointers.h"
+
 /**
- * print_name - function that take a string to function
+ * print_name - a function that prints a name.
+ * @name: the name given
+ * @f: function of name
  *
- * @name : a string taken from user
- *
- * @f : function that do something to the string
- *
- *
- * Description - function that callback functions
- *
+ * Rteurn: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name && f)
-	{
+	if (name != NULL && f != NULL)
+
 		f(name);
-	}
 }

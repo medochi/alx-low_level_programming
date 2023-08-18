@@ -1,39 +1,30 @@
 #include "function_pointers.h"
 
 /**
- * int_index - function that checks
- *
- * @size: size of array
- * @array: array rhat we itirate in
- * @cmp: function
- *
- *
- * Return: int
- *
- */
-
+  * int_index - ...
+  * @array: ...
+  * @size: ...
+  * @cmp: ...
+  *
+  * Return: ...
+  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int i = 0;
 
-	if (array && cmp)
-
+	if (size > 0)
 	{
-
-		for (i = 0 ; i < size ; i++)
-
+		if (array != NULL && cmp != NULL)
 		{
-			int what;
-
-			what = cmp(array[i]);
-			if (what)
-
+			while (i < size)
 			{
-				return (i);
+				if (cmp(array[i]))
+					return (i);
+
+				i++;
 			}
 		}
-
 	}
 
-return (-1);
+	return (-1);
 }
