@@ -12,22 +12,20 @@
  *
  */
 
+
+
 int main(int argc, char *argv[])
 {
-	int lol = argc;
+        int (*oprp)(int , int);
 
-	int a = atoi(argv[1]);
+        if (argc != 4)
+        {
+                printf("error!!!!!!!");
+                exit(98);
+        }
+        oprp = get_op_func(argv[2]);
 
-	int b = atoi(argv[3]);
-
-	char *s = argv[2];
-
-	int eq = get_op_func(*s)(a, b);
-
-	if (lol == 3)
-	{
-		printf("\n");
-	}
-	printf("%d\n", eq);
-	return (0);
+        printf("%d\n", oprp(atoi(argv[1]),atoi(argv[3])));
+        return (0);
 }
+
